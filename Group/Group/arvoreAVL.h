@@ -5,6 +5,12 @@ struct NO{
     struct NO *direita;
 };
 
+// Set Iterator
+struct iterator{
+  int valor;
+  struct iterator* prox;
+} iterator;
+
 typedef struct NO NO;
 typedef struct NO* ArvrAVL;
 
@@ -33,4 +39,8 @@ void rotacaoRL(ArvrAVL *raiz);
 int inserir_arvAVL(ArvrAVL *raiz, int valor);
 
 int remover_arvAVL(ArvrAVL *raiz, int valor);
+
 int consulta_arvAVL(ArvrAVL *raiz, int valor);
+
+
+void iterator_ArvAVL(ArvrAVL *raiz, struct iterator ** iter);

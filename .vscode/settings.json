@@ -1,7 +1,27 @@
 {
     "files.associations": {
         "stdlib.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "arvoreavl.h": "c",
+        "__bit_reference": "c",
+        "__config": "c",
+        "__debug": "c",
+        "__hash_table": "c",
+        "__split_buffer": "c",
+        "__string": "c",
+        "array": "c",
+        "bitset": "c",
+        "iterator": "c",
+        "functional": "c",
+        "initializer_list": "c",
+        "locale": "c",
+        "memory": "c",
+        "string": "c",
+        "string_view": "c",
+        "unordered_map": "c",
+        "vector": "c",
+        "version": "c",
+        "set.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -8,9 +8,15 @@ int main()
 
     arvAVL = cria_arvoreAVL();
 
-    // int inserir1 = inserir_arvAVL(arvAVL, 10);
-    // printf("inserir 1: %i\n", inserir1);
+    int inserir1 = inserir_arvAVL(arvAVL, 10);
+    printf("inserir 1: %i\n", inserir1);
 
+
+    int del1 = remover_arvAVL(arvAVL, 10);
+    printf("remover 1: %i\n", del1);
+
+    int busca1 = consulta_arvAVL(arvAVL, 10);
+    printf("busca 1: %i\n", busca1);
     // int height1 = fatorBalanceamento_NO(*arvAVL);
     // printf("height: %i \n", height1);
 
@@ -43,25 +49,25 @@ int main()
 
     // int height6 = fatorBalanceamento_NO(*arvAVL);
     // printf("height: %i \n", height6);
-    for (int i = 0; i < 10; i++)
-    {
-        int validador = inserir_arvAVL(arvAVL, i);
-        int balanceamento = fatorBalanceamento_NO(*arvAVL);
-        printf("%i\n", (*arvAVL)->info);
-        printf("inserir : %i\n", validador);
-        printf("balanceamento: %i\n",balanceamento);
-    }
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     int validador = inserir_arvAVL(arvAVL, i);
+    //     int balanceamento = fatorBalanceamento_NO(*arvAVL);
+    //     printf("%i\n", (*arvAVL)->info);
+    //     printf("inserir : %i\n", validador);
+    //     printf("balanceamento: %i\n",balanceamento);
+    // }
 
-    for (int i = 10; i > 0; i--)
-    {
-        int validador = remover_arvAVL(arvAVL, i);
-        int balanceamento = fatorBalanceamento_NO(*arvAVL);
-        printf("%i\n", (*arvAVL)->info);
-        printf("remover : %i\n", validador);
-        printf("balanceamento: %i\n",balanceamento);
-    }
+    // for (int i = 10; i > 0; i--)
+    // {
+    //     int validador = remover_arvAVL(arvAVL, i);
+    //     int balanceamento = fatorBalanceamento_NO(*arvAVL);
+    //     printf("%i\n", (*arvAVL)->info);
+    //     printf("remover : %i\n", validador);
+    //     printf("balanceamento: %i\n",balanceamento);
+    // }
 
-    preOrdem_ArvoreAVL(arvAVL);
+    // preOrdem_ArvoreAVL(arvAVL);
 
     //  int remove1 = remover_arvAVL(arvAVL, 10);
     //  printf("remover 1: %i\n", remove1);

@@ -250,3 +250,21 @@ int consulta_arvAVL(ArvrAVL *raiz, int valor){
     }
     return 0;
 }
+
+
+// Set Iterator
+void iterator_ArvAVL(ArvrAVL *raiz, struct iterator ** iter){
+  if(raiz == NULL) return;
+  if((*raiz) != NULL){
+    iterator_ArvAVL(&((*raiz)->esquerda), iter);
+
+    struct iterator* no;
+
+    no = (struct iterator*) malloc(sizeof(struct iterator)); 
+    no->valor = (*raiz)->info;
+    no->prox = (*iter);
+    (*iter) = no;
+
+    iterator_ArvAVL(&((*raiz)->direita), iter);
+  }
+}
